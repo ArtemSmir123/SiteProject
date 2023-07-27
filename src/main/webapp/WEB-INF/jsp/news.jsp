@@ -20,8 +20,7 @@
      <p><form method="GET" action="/logout"><button type="submit" id="ser7">Выйти</button></form></p>
 </div>
 <div id="sectionadmin" class="section">
-    <h2>Новости <br> Только для залогинившихся пользователей.</h2>
-    <a href="/">Главная</a>
+    <h2>Рейсы <br> Только для залогинившихся пользователей.</h2>
     <table>
         <thead>
         <th>Номер рейса</th>
@@ -29,14 +28,16 @@
         <th>Дата прилета</th>
         <th>Город вылета</th>
         <th>Город прилета</th>
+        <th>Самолет</th>
         </thead>
         <c:forEach items="${allFlights}" var="flight">
           <tr>
             <td>${flight.id_flight}</td>
             <td>${flight.departure_date}</td>
             <td>${flight.arrival_date}</td>
-            <td>${flight.departure_city}</td>
-            <td>${flight.arrival_city}</td>
+            <td>${flight.departure_city.name_city}</td>
+            <td>${flight.arrival_city.name_city}</td>
+            <td>${flight.plane.model}</td>
           </tr>
         </c:forEach>
       </table>
