@@ -1,0 +1,50 @@
+body {
+    background-image: url("background/back.jpeg");
+    background-size: no-repeat;
+    background-color: white;
+    text-align: center;
+}
+.section {
+    background: black;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+}
+#section1, #section3 {
+    top: 50%;
+    left: 50%;
+    margin-center: -50%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+}
+
+#sectionadmin {
+    text-align:center;
+    top: 3%;
+    left: 30%;
+    width: 53%;
+}
+
+#auth {
+    top: 3%;
+    left: 5%;
+    width: 15%;
+}
+
+.inputfield {
+    align:center;
+    width: 90%;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+#ser7, #ser8 {
+    width: 97%;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+#tableBut {
+    width: 97%;
+    border-radius: 1em;
+    padding: 0.5em;
+}
